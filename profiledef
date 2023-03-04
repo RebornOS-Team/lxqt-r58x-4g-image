@@ -5,7 +5,7 @@ img_version=time.strftime("%Y-%m-%d")
 edition="lxqt" # home, security 
 device="rock5b" # rpi more will be added soon
 arch="aarch64" # aarch64, armv7h
-img_name="RebornOS-ARM-r58x-" + img_version
+img_name="RebornOS-ARM-r58x-4g-" + img_version
 install_dir="arch"
 fs="ext4" # ext4 or btrfs
 img_type="image" # image (img.xz) or rootfs (tar.gz)
@@ -17,5 +17,5 @@ configtxt='''
 LABEL RebornOS ARM
     KERNEL /vmlinuz-linux-rockchip-rk3588
     INITRD /initramfs-linux-rockchip-rk3588.img
-    FDT /dtbs/rockchip/rk3588-hugsun-edge-android.dtb
+    FDT /dtbs/rockchip/rk3588-blueberry-edge-v12-linux.dtb
 '''
